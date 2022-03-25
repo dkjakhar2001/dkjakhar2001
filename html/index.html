@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
+    
+</head>
+<body>
+
+<!--navbar-->
+<header>
+    <div class="logo">
+        <h1 class="hl">Lord Shiva Sr. Sec. School</h1>    
+    </div>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+            <div class="dropdown">Login
+            
+            <div class="dropdown-content">
+                    <a href="/html/login.html#studentlogin">Student Login</a>
+                    <a href="/html/login.html#stafflogin">Staff Login</a>
+                    <a href="/html/login.html#adminlogin">Admin Login</a>
+            </div>
+        </div>
+        </ul>
+    </nav>
+</header>
+
+<!---navbar ends-->
+
+<section class="home" id="home">
+    <div class="container">
+        <img src="/assets/lord-shiva-15016.png" alt="">
+        <h1 class="head_h">Lord Shiva Sr. Sec. School, Ludas</h1>
+        <p>[Since - 19XX]</p>
+        <a href="#contact-us">Contact Us</a>
+    </div>
+    
+</section>
+<section class="contact-us" id="contact-us">
+    <h1>Contact Us</h1>
+    <div class="container2">
+        
+        <div class="contactdet">
+            <p class="cntp1">Address:-</p>
+            <p>&nbsp;&nbsp; V.P.O.- Ludas , Kirtan Road</p>
+            <p>Hissar (125001)</p>
+            <p>Mobile no.:- 9416780397</p>
+        </div>
+        <div class="contact-form">
+            <form action="" method="">
+                <input type="text" class="input-field" id="name" placeholder="Name"required>
+                <input type="email" class="input-field" id="email" placeholder="Email" required>
+                <textarea type="text" class="input-field textarea-field" id="message" placeholder="Message" required></textarea>
+                <input class="cfsbtn" type="submit" id="submit" value="Submit">
+                
+            </form>
+        </div>
+    </div>
+
+</section>
+<div class="footer">
+    <span>Developed by :- Dinesh Kumar</span>
+    <span>Copyright &#169 Lord Shiva Sr. Sec. School</span>
+    <span>instagram :- @dk_jakhar2001</span>
+</div>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<script>
+    let click = document.querySelector('dropdown');
+    let list = document.querySelector('dropdown-content');
+    click.addEventListener("click", ()=>{
+        list.classList.toogle('newlist')
+    });
+</script>
+    
+</body>
+</html>
